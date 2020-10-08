@@ -38,6 +38,11 @@ friends = ["Rolf", "Jen", "Bob", "Anne"]
 for friend in friends:
     print(f"{friend} is my friend.")
 
+# -- Use enumerate() to get index & item --
+friends = ["Rolf", "Jen", "Bob", "Anne"]
+for idx, friend in enumerate(friends):
+    print(f"{friend} (at index {idx}) is my friend.")
+
 # -- For loop 2 -- Average
 
 grades = [35, 67, 98, 100, 100]

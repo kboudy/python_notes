@@ -20,6 +20,10 @@ print(t)
 
 l.append("Jen")
 print(l)
+
+# remove it with pop
+l.pop("Jen")
+
 # Tuples cannot be appended to because they are immutable.
 
 # Add to sets by using `.add`
