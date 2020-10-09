@@ -5,7 +5,7 @@ connection.row_factory = sqlite3.Row  # will return dictionary instead of Tuple
 def create_table():
     with connection:
         connection.execute(
-            "IF NOT EXISTS CREATE TABLE entries (content TEXT, date TEXT);")
+            "CREATE TABLE IF NOT EXISTS entries (content TEXT, date TEXT);")
 
 
 def add_entry(entry_content, entry_date):
